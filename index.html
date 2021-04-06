@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Finanças</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="wrapper">
+    <header>
+      <h3>Saldo</h3>
+      <p>R$ <strong>1234,56</strong></p>
+    </header>
+  
+    <section class="balance">
+      <div class="container-incoming">
+        <p>Recebido</p>
+        <p id="incoming-value">R$ 1234,56</p>
+      </div>
+
+      <div class="container-expenses">
+        <p>Despesas</p>
+        <p id="expenses-value">R$ 1234,56</p>
+      </div>
+    </section>
+
+    <section class="resume-balance">
+      <div class="header-resume">
+        <div class="options">
+          <a href="#">Todos</a>
+          <a href="#">Recebido</a>
+          <a href="#">Despesas</a>
+        </div>
+
+        <div class="new-transaction">
+          <button>
+            Nova transação
+          </button>
+        </div>
+      </div>
+
+      <section class="resume-day mar-30">
+        <p id="day">30 Mar.</p>
+
+        <div class="data-balance">
+          <p class="transaction-name">Compra 01</p>
+
+          <p class="transaction-value incoming">+ 123,45</p>
+
+          <p class="transaction-type">Contas</p>
+
+          <div class="btn-options"></div>
+        </div>
+
+        <div class="data-balance">
+          <p class="transaction-name">Compra 02</p>
+
+          <p class="transaction-value expenses">- 123,45</p>
+
+          <p class="transaction-type">Cartão</p>
+
+          <div class="btn-options"></div>
+        </div>
+      </section>
+
+      <section class="resume-day mar-29">
+        <p id="day">29 Mar.</p>
+
+        <div class="data-balance">
+          <p class="transaction-name">Compra 01</p>
+
+          <p class="transaction-value incoming">+ 2500,00</p>
+
+          <p class="transaction-type">Contas</p>
+
+          <div class="btn-options"></div>
+        </div>
+
+        <div class="data-balance">
+          <p class="transaction-name">Compra 02</p>
+
+          <p class="transaction-value expenses">- 1823,25</p>
+
+          <p class="transaction-type">Cartão</p>
+
+          <div class="btn-options"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
