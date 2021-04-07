@@ -159,7 +159,7 @@ header p strong {
   display: flex;
   justify-content: center;
   margin-right: 5px;
-  
+  font-size: 0;
 }
 
 .new-transaction button:hover {
@@ -210,4 +210,57 @@ header p strong {
 .btn-options:hover {
   background: #e9e9e9;
   border-radius: 50%;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100vh;
+
+  background: green;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+
+  position: relative;
+}
+
+.modal .btn-fechar {
+  position: absolute;
+
+  top: 0;
+  right: 20px;
+}
+
+.modal form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal .input-group {
+  width: 100%;
+}
+
+.modal .input-group input {
+  width: 100%;
+}
+
+.modal .input-group select {
+  width: 100%;
 }
