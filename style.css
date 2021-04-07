@@ -216,51 +216,87 @@ header p strong {
   width: 100%;
   height: 100vh;
 
-  background: green;
+  background: rgb(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  display: none;
 }
 
 .modal {
-  background: red;
+  background: #FFF;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  width: 40%;
+  width: 30%;
 
-  position: relative;
-}
-
-.modal .btn-fechar {
-  position: absolute;
-
-  top: 0;
-  right: 20px;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 .modal form {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.modal form h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #676767;
+}
+
 .modal .input-group {
   width: 100%;
+  margin-bottom: 10px;
 }
 
-.modal .input-group input {
-  width: 100%;
-}
-
+.modal .input-group input,
 .modal .input-group select {
   width: 100%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #525252;
+  background-color: #ECECEC;
+}
+
+.modal .input-group-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modal .input-group-btns a {
+  background: none;
+  padding: 0.5rem;
+  width: 45%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FE3838;
+  color: #FE3838;
+  font-size: 0.9rem;
+}
+
+.modal .input-group-btns button {
+  background: #2DBE4B;
+  padding: 0.5rem;
+  width: 45%;
+  border: 2px solid #2DBE4B;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
 }

@@ -95,8 +95,6 @@
 
       <section class="modal-container">
         <div class="modal">
-          <button class="btn-fechar">X</button>
-
           <form action="">
             <h5>Nova Transação</h5>
 
@@ -114,6 +112,7 @@
 
             <div class="input-group">
               <select name="type-purchase" id="type-purchase">
+                <option value="" disabled selected hidden>Tipo da transação</option>
                 <option value="compras">Compras</option>
                 <option value="luz">Luz</option>
               </select>
@@ -121,6 +120,11 @@
 
             <div class="input-group">
               <input type="date" name="date-purchase" id="date-purchase" />
+            </div>
+
+            <div class="input-group-btns">
+              <a href="#" class="btn-cancel">Cancelar</a>
+              <button type="submit">Salvar</button>
             </div>
           </form>
         </div>
